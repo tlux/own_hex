@@ -58,10 +58,10 @@ defmodule OwnHex.Packages.StorageTest do
                     name: @package_name,
                     versions: [
                       PackageVersion.from_specification!(
-                        Specification.new!(@package_name, "1.0.0")
+                        Specification.new!(@package_name, "1.2.3")
                       ),
                       PackageVersion.from_specification!(
-                        Specification.new!(@package_name, "1.2.3")
+                        Specification.new!(@package_name, "1.0.0")
                       )
                     ],
                     latest_version:

@@ -30,6 +30,7 @@ defmodule OwnHex.Packages.Storage do
 
   defp list_packages_with_opts(filenames, opts) do
     filenames
+    |> Enum.sort()
     |> Enum.reduce(%{}, fn filename, packages ->
       with {:ok, %{name: name} = specification} <-
              Specification.from_tarball(filename),
