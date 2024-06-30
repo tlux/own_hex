@@ -1,0 +1,15 @@
+{
+  "default_stop_words": ["defexception", "defstruct"],
+  "skip_files": [
+    "cover",
+    "lib/own_hex/application.ex",
+    "lib/own_hex/config.ex",
+    "mock",
+    "priv",
+    "public",
+    "test"
+  ],
+  "terminal_options": {
+    "file_column_width": 60
+  }
+}

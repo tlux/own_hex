@@ -1,0 +1,8 @@
+*.pem
+*.tar
+*.tar.gz
+*.tgz
+/priv
+/public
+/test
+/tmp
