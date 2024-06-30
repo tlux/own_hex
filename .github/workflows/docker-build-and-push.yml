@@ -44,8 +44,8 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: |
-            ghcr.io/${{ github.repository_owner }}/my-image:latest
-            ghcr.io/${{ github.repository_owner }}/my-image:${{ github.ref }}
+            ghcr.io/${{ github.repository_owner }}/own_hex:latest
+            ghcr.io/${{ github.repository_owner }}/own_hex:${{ github.ref }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
